@@ -1,0 +1,48 @@
+Question 3b log
+================
+ADAE rows: 1191 
+ADSL rows: 306 
+TEAE rows: 1122 
+Total subjects: 306 
+
+Subjects per arm:
+# A tibble: 4 × 2
+  ACTARM                   N
+  <chr>                <int>
+1 Placebo                 86
+2 Screen Failure          52
+3 Xanomeline High Dose    72
+4 Xanomeline Low Dose     96
+
+Severity data:
+# A tibble: 9 × 5
+  ACTARM               AESEV    count     N arm_label                       
+  <chr>                <fct>    <int> <int> <chr>                           
+1 Placebo              MILD       210    86 "Placebo\n(N = 86)"             
+2 Placebo              MODERATE    65    86 "Placebo\n(N = 86)"             
+3 Placebo              SEVERE       6    86 "Placebo\n(N = 86)"             
+4 Xanomeline High Dose MILD       286    72 "Xanomeline High Dose\n(N = 72)"
+5 Xanomeline High Dose MODERATE   118    72 "Xanomeline High Dose\n(N = 72)"
+6 Xanomeline High Dose SEVERE      10    72 "Xanomeline High Dose\n(N = 72)"
+7 Xanomeline Low Dose  MILD       232    96 "Xanomeline Low Dose\n(N = 96)" 
+8 Xanomeline Low Dose  MODERATE   170    96 "Xanomeline Low Dose\n(N = 96)" 
+9 Xanomeline Low Dose  SEVERE      25    96 "Xanomeline Low Dose\n(N = 96)" 
+
+Top 10 AE incidence data:
+# A tibble: 10 × 5
+   AETERM                      n_subjects   pct ci_lo ci_hi
+   <fct>                            <int> <dbl> <dbl> <dbl>
+ 1 PRURITUS                            54 17.6  13.5  22.4 
+ 2 APPLICATION SITE PRURITUS           50 16.3  12.4  21.0 
+ 3 ERYTHEMA                            36 11.8   8.38 15.9 
+ 4 APPLICATION SITE ERYTHEMA           30  9.80  6.71 13.7 
+ 5 RASH                                26  8.50  5.63 12.2 
+ 6 APPLICATION SITE DERMATITIS         21  6.86  4.30 10.3 
+ 7 APPLICATION SITE IRRITATION         21  6.86  4.30 10.3 
+ 8 DIZZINESS                           21  6.86  4.30 10.3 
+ 9 DIARRHOEA                           17  5.56  3.27  8.75
+10 SINUS BRADYCARDIA                   17  5.56  3.27  8.75
+
+Output files:
+ae_severity_plot.png
+ae_top10_plot.png

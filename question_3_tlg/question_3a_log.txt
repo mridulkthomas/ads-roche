@@ -1,0 +1,33 @@
+Question 3a log
+================
+ADAE rows: 1191 
+ADSL rows: 306 
+TEAE rows: 1122 
+Total subjects: 306 
+
+Subjects per arm:
+# A tidytable: 4 × 2
+  ACTARM               N_ARM
+  <chr>                <int>
+1 Placebo                 86
+2 Screen Failure          52
+3 Xanomeline High Dose    72
+4 Xanomeline Low Dose     96
+
+TRTEMFL distribution:
+
+   Y <NA> 
+1122   69 
+
+ACTARM distribution in ADSL:
+
+             Placebo       Screen Failure Xanomeline High Dose  Xanomeline Low Dose 
+                  86                   52                   72                   96 
+                <NA> 
+                   0 
+
+AE summary dimensions:
+Rows: 230  Cols: 13 
+
+Output file:
+ae_summary_table.html

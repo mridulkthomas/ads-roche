@@ -1,0 +1,47 @@
+ADSL creation log
+=================
+Rows: 306 
+Cols: 34 
+
+Variable names:
+ [1] "STUDYID"  "USUBJID"  "SUBJID"   "SITEID"   "AGE"      "AGEU"     "AGEGR9"  
+ [8] "AGEGR9N"  "SEX"      "RACE"     "ETHNIC"   "COUNTRY"  "ARM"      "ACTARM"  
+[15] "ARMCD"    "ACTARMCD" "RFSTDTC"  "RFENDTC"  "TRTSDTM"  "TRTSTMF"  "TRTEDTM" 
+[22] "ITTFL"    "LSTAVLDT" "DTHFL"    "DTHDTC"   "DMDTC"    "DMDY"     "RFXSTDTC"
+[29] "RFXENDTC" "RFICDTC"  "RFPENDTC" "BRTHDTC"  "RFSTDT"   "RFENDT"  
+
+AGEGR9 distribution:
+
+    >50 18 - 50    <NA> 
+    305       1       0 
+
+ITTFL distribution:
+
+   Y <NA> 
+ 306    0 
+
+TRTSDTM non-missing:
+[1] 254
+
+LSTAVLDT non-missing:
+[1] 306
+
+First 10 rows:
+# A tibble: 10 × 34
+   STUDYID    USUBJID SUBJID SITEID   AGE AGEU  AGEGR9 AGEGR9N SEX   RACE  ETHNIC COUNTRY
+   <chr>      <chr>   <chr>  <chr>  <dbl> <chr> <chr>    <int> <chr> <chr> <chr>  <chr>  
+ 1 CDISCPILO… 01-701… 1015   701       63 YEARS >50          3 F     WHITE HISPA… USA    
+ 2 CDISCPILO… 01-701… 1023   701       64 YEARS >50          3 M     WHITE HISPA… USA    
+ 3 CDISCPILO… 01-701… 1028   701       71 YEARS >50          3 M     WHITE NOT H… USA    
+ 4 CDISCPILO… 01-701… 1033   701       74 YEARS >50          3 M     WHITE NOT H… USA    
+ 5 CDISCPILO… 01-701… 1034   701       77 YEARS >50          3 F     WHITE NOT H… USA    
+ 6 CDISCPILO… 01-701… 1047   701       85 YEARS >50          3 F     WHITE NOT H… USA    
+ 7 CDISCPILO… 01-701… 1057   701       59 YEARS >50          3 F     WHITE HISPA… USA    
+ 8 CDISCPILO… 01-701… 1097   701       68 YEARS >50          3 M     WHITE NOT H… USA    
+ 9 CDISCPILO… 01-701… 1111   701       81 YEARS >50          3 F     WHITE NOT H… USA    
+10 CDISCPILO… 01-701… 1115   701       84 YEARS >50          3 M     WHITE NOT H… USA    
+# ℹ 22 more variables: ARM <chr>, ACTARM <chr>, ARMCD <chr>, ACTARMCD <chr>,
+#   RFSTDTC <chr>, RFENDTC <chr>, TRTSDTM <dttm>, TRTSTMF <chr>, TRTEDTM <dttm>,
+#   ITTFL <chr>, LSTAVLDT <date>, DTHFL <chr>, DTHDTC <chr>, DMDTC <chr>, DMDY <dbl>,
+#   RFXSTDTC <chr>, RFXENDTC <chr>, RFICDTC <chr>, RFPENDTC <chr>, BRTHDTC <chr>,
+#   RFSTDT <date>, RFENDT <date>

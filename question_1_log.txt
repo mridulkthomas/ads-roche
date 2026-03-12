@@ -1,0 +1,45 @@
+DS domain creation log
+======================
+Rows: 850 
+Cols: 12 
+
+Variable names:
+ [1] "STUDYID"  "DOMAIN"   "USUBJID"  "DSSEQ"    "DSTERM"   "DSDECOD"  "DSCAT"   
+ [8] "VISITNUM" "VISIT"    "DSDTC"    "DSSTDTC"  "DSSTDY"  
+
+DSDECOD distribution:
+
+              ADVERSE EVENT                   COMPLETED                       DEATH 
+                         92                         110                           3 
+           LACK OF EFFICACY           LOST TO FOLLOW-UP          PHYSICIAN DECISION 
+                        294                           2                           3 
+         PROTOCOL VIOLATION              SCREEN FAILURE STUDY TERMINATED BY SPONSOR 
+                          6                          52                           7 
+      WITHDRAWAL BY SUBJECT                        <NA> 
+                         27                         254 
+
+DSCAT distribution:
+
+ DISPOSITION EVENT PROTOCOL MILESTONE 
+               798                 52 
+
+Missingness summary:
+ STUDYID   DOMAIN  USUBJID    DSSEQ   DSTERM  DSDECOD    DSCAT VISITNUM    VISIT 
+       0        0        0        0      290      254        0       41        0 
+   DSDTC  DSSTDTC   DSSTDY 
+       0        0      850 
+
+First 10 rows:
+# A tidytable: 10 × 12
+   STUDYID  DOMAIN USUBJID DSSEQ DSTERM DSDECOD DSCAT VISITNUM VISIT DSDTC DSSTDTC DSSTDY
+   <chr>    <chr>  <chr>   <int> <chr>  <chr>   <chr>    <dbl> <chr> <chr> <chr>    <int>
+ 1 CDISCPI… DS     CDISCP…     1 Rando… <NA>    DISP…        2 Base… 2014… 2014-0…     NA
+ 2 CDISCPI… DS     CDISCP…     2 Proto… COMPLE… DISP…       26 Week… 2014… 2014-0…     NA
+ 3 CDISCPI… DS     CDISCP…     3 <NA>   LACK O… DISP…       26 Week… 2014… 2014-0…     NA
+ 4 CDISCPI… DS     CDISCP…     1 Rando… <NA>    DISP…        2 Base… 2012… 2012-0…     NA
+ 5 CDISCPI… DS     CDISCP…     2 Adver… ADVERS… DISP…        4 Week… 2012… 2012-0…     NA
+ 6 CDISCPI… DS     CDISCP…     3 <NA>   LACK O… DISP…        4 Week… 2012… 2012-0…     NA
+ 7 CDISCPI… DS     CDISCP…     4 <NA>   LACK O… DISP…       NA Retr… 2013… 2013-0…     NA
+ 8 CDISCPI… DS     CDISCP…     1 Rando… <NA>    DISP…        2 Base… 2013… 2013-0…     NA
+ 9 CDISCPI… DS     CDISCP…     2 Proto… COMPLE… DISP…       26 Week… 2014… 2014-0…     NA
+10 CDISCPI… DS     CDISCP…     3 <NA>   LACK O… DISP…       26 Week… 2014… 2014-0…     NA
